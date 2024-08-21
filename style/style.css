@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+/*Yeah i uhh, kind-of just nabbed this navbar styling from my own website with some slight edits*/
+nav {
+    font-size: 32px;
+    background-color: rgb(28, 191, 255);
+}
+nav p{
+    text-align: center;  
+    display: inline-block;
+    padding: 14px 25px;
+    color: white;
+    font-weight: bold;
+}
+nav a {
+    text-align: center;  
+    display: inline-block;
+    padding: 14px 25px;
+    text-decoration: none;
+}
+nav a:hover{
+    background-color: black;
+    opacity:0.5;
+}
+nav a:link {
+    color: white
+}
+nav a:visited{
+    color:white;
+}
+nav a:active{
+    color:#636363;
+}
+
+/*Table*/
+table {
+    text-align: left;
+    border-collapse: collapse;
+}
+td, th {
+    border: 1px solid #888;
+    padding: 10px;
+}
+

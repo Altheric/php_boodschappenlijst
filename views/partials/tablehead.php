@@ -1,0 +1,10 @@
+<table>
+    <thead>
+        <tr>
+            <th>Product</th>
+            <th>Prijs</th>
+            <th>Aantal</th>
+            <th>Subtotaal</th>
+        </tr>
+    </thead>
+    <tbody>
