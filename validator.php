@@ -1,11 +1,18 @@
 <?php
     class Validator {
         //I'll be entirely honest, I wrote these functions before assignment 15 and wasn't feeling like refactoring the entire code.
+        // TODO: kies generieke naamgeving, dus niet postStrInput, wat impliceert dat het altijd
+        // TODO: kies eenvoudige method names, dus "string", "integer", etc.
+        // om ge-POST-e data gaat
         function validateStrInput($postStrInput){
             //Validate str input.
             $cleanStr = '';
             //First, check if the input was empty.
             if(empty($postStrInput)){
+                // TODO: ik zou de validator vereenvoudigen, zodat deze altijd alleen een boolean
+                // retourneert, dus wel / geen geldige string. Hierdoor wordt je code leesbaarder.
+                // voeg ook een min en max lengte parameter toe zodat je kunt valideren op lengte van
+                // string
                 return ["Is niet ingevuld!", false];
             } else {
                 //Now make sure the usual suspects of malicious code are out of the way.

@@ -13,6 +13,9 @@ function urlIs($url){
     //Return whether or not the given url is the current page.
     return $_SERVER['REQUEST_URI'] === $url;
 }
+
+// TODO: onderstaande functie is specifiek voor 1 table, dus kan daarom beter in de view gezet worden,
+// dus zonder eigen functie. I.c.m. de 2 require statements wordt de code nu te verweven.
 function displayTable($tableArr){
     //Return a table from the database as a table in html.
     $totalPrice = 0;

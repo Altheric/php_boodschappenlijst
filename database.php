@@ -1,4 +1,5 @@
 <?php
+// TODO: filename ook uppercase first, dus Database.php, indien het om class definities gaat
 class Database {
     public $connection;
     public $statement;
@@ -19,6 +20,8 @@ class Database {
         //Now execute it.
         $this->statement->execute($params);
         //Lastly, return it.
+
+        // TODO: return alle evt. rows / result, niet de db class instance zelf
         return $this;
     }
 
